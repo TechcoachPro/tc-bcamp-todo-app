@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Todo App</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/5ec4ad3cde.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <main class="app">
-            <section class="greeting">
-                <h2 class="title">
-                    Hello <input type="text" id="name" placeholder="Name here" />
-                </h2>
-            </section>
+  <head>
+    <title>Todo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ec4ad3cde.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="greeting">
+        <h2 class="title">
+          Hello <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
 
-            <section class="create-todo">
-                <h3>CREATE A TODO</h3>
-                <form action="" id="new-todo-form">
-                    <h4>What's on your schedule?</h4>
-                    <input
-                        type="text"
-                        name="content"
-                        value=""
-                        id="content"
-                        placeholder="E.g: Read at 8PM today"
-                    />
-                    <span id="error" class="error"></span>
-                    <h4>Choose a category</h4>
-                    <div class="options">
-                        <label>
-                            <input
-                                type="radio"
-                                name="category"
-                                id="category"
-                                value="business"
-                            />
-                            <span class="bubble business"></span>
-                            <div>Business</div>
-                        </label>
-                        <label>
-                            <input
-                                type="radio"
-                                name="category"
-                                id="category2"
-                                value="personal"
-                            />
-                            <span class="bubble personal"></span>
-                            <div>Personal</div>
-                        </label>
-                    </div>
-                    <input type="submit" value="Add Todo" />
-                </form>
-            </section>
+      <section class="create-todo">
+        <h3>CREATE A TODO</h3>
+        <form action="" id="new-todo-form">
+          <h4>What's on your schedule?</h4>
+          <input
+            type="text"
+            name="content"
+            value=""
+            id="content"
+            placeholder="E.g: Read at 8PM today"
+          />
+          <span id="error" class="error"></span>
+          <h4>Choose a category</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Business</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+          <input type="submit" value="Add Todo" />
+        </form>
+      </section>
 
-            <section class="todo-list">
-                <h3>TODO LIST</h3>
-                <div class="list" id="todo-list">
-                    <!-- <div class="todo-item">
-                        <label>
-                            <input type="checkbox" />
-                            <span class="bubble business"></span>
-                        </label>
+      <section class="todo-list">
+        <h3>TODO LIST</h3>
+        <div class="list" id="todo-list">
+          <!-- <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble business"></span>
+            </label>
 
-                        <div class="todo-content">
-                            <input type="text" value="Read chapter 8" readonly />
-                        </div>
+            <div class="todo-content">
+              <input type="text" value="Read chapter 8" readonly />
+            </div>
 
-                        <div class="actions">
-                            <button class="edit">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                            </button>
-                            <button class="delete">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
-                        </div>
-                    </div> -->
-                </div>
-            </section>
-        </main>
-    </body>
-    <script src="./js/app.js"></script>
+            <div class="actions">
+              <button class="edit">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+              <button class="delete">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./js/app.js"></script>
 </html>
