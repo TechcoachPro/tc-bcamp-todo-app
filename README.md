@@ -11,7 +11,7 @@ This is the complete source code for the todo app project, kindly clone the proj
 
 ## About Us
 
-[Techcoach](https://techcoach.pro) is a web development coaching platform, we aimed at raising world class Tech legends across the globe.
+[Techcoach](https://techcoach.pro) is a web development coaching platform aimed at raising world class software developers across the globe.
 
 ### Contact
 To learn more about us, contact us using the following handle:
