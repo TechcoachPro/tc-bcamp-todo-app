@@ -11,15 +11,13 @@ This is the complete source code for the todo app project, kindly clone the proj
 
 ## About Us
 
-[Apexloaded](https://apexloaded.com) is a Global Pioneer in providing IT Consults and Custom Software Development, we armed at raising world class Tech legends across the globe.
+[Techcoach](https://techcoach.pro) is a web development coaching platform, we aimed at raising world class Tech legends across the globe.
 
 ### Contact
 To learn more about us, contact us using the following handle:
 
-- **[Apexloaded.com](https://apexloaded.com/) - Website**
-- **[Twitter.com](https://twitter.com/apexloaded) - Twitter**
-- **[Facebook.com](https://facebook.com/apexloaded) - Facebook**
-- **[Instagram.com](https://instagram.com/officialapexloaded) - Instagram**
-- **[info@apexloaded.com](mailto:info@apexloaded.com) - Email**
+- **[Techcoach.pro](https://techcoach.pro/) - Website**
+- **[Instagram.com](https://instagram.com/techcoach.pro) - Instagram**
+- **[jeffery@techcoach.pro](mailto:jeffery@techcoach.pro) - Email**
 
 Subscribe to our [Youtube](https://www.youtube.com/channel/UCs6rn-keO-4tZ0hWMXGzPvw) channel to get more updates on new projects we will be working on.
