@@ -1,8 +1,7 @@
-window.addEventListener("load", async (e) => {
+window.addEventListener("load", (e) => {
   // Get todos from local storage using localStorage.getItem('todos')
   // todos => is a global variable
-  apiUrl = `http://localhost:4000`;
-  todos = (await getTodos()) || [];
+  todos = JSON.parse(localStorage.getItem("todos")) || [];
   const nameInp = document.querySelector("#name");
   const newTodoForm = document.querySelector("#new-todo-form");
   const error = document.querySelector("#error");
@@ -20,7 +19,7 @@ window.addEventListener("load", async (e) => {
   });
 
   // Add a new todo to the list on submit
-  newTodoForm.addEventListener("submit", async (e) => {
+  newTodoForm.addEventListener("submit", (e) => {
     e.preventDefault(); // Stop the browser from refreshing on submit
 
     // Simple validation to check if content is emptly likewise category.
@@ -37,19 +36,13 @@ window.addEventListener("load", async (e) => {
       content: e.target.elements.content.value,
       category: e.target.elements.category.value,
       isDone: false,
-      createAt: new Date(),
+      createAt: new Date().getTime(),
     }; // A new todo object instance
 
-    const response = await fetch(`${apiUrl}/`, {
-      method: "POST",
-      body: JSON.stringify(todo),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await response.json();
-    console.log(data);
-    todos.push(data.todo); // Adding the new todo object to the global todos Array
+    todos.push(todo); // Adding the new todo object to the global todos Array
+
+    // Add todos to local storage
+    localStorage.setItem("todos", JSON.stringify(todos));
 
     // Reset the todo inputs
     e.target.reset();
@@ -61,16 +54,6 @@ window.addEventListener("load", async (e) => {
   // Display todos
   displayTodos();
 });
-
-async function getTodos() {
-  try {
-    const response = await fetch(`${apiUrl}/`);
-    const data = await response.json();
-    return data.todo;
-  } catch (error) {
-    console.log(error);
-  }
-}
 
 // This function will display all todos
 function displayTodos() {
@@ -136,7 +119,7 @@ function displayTodos() {
     // Appending the each todo item to the todo list.
     todoList.appendChild(todoItem);
 
-    if (todo.isDone) {
+    if (todo.isDone) { 
       // is todo is completed, add a class done to todo item
       todoItem.classList.add("done");
     }
@@ -174,5 +157,6 @@ function displayTodos() {
       localStorage.setItem("todos", JSON.stringify(todos));
       displayTodos();
     });
+    
   });
 }
